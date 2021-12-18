@@ -1,0 +1,94 @@
+.image-container {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    position:relative;
+}
+
+.garden-gate {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius:10px;
+}
+
+.save-icon {
+    position:absolute;
+    color:white;
+    text-align:center;
+    font-family: 'helvetica';
+    font-size: 90% ;
+    font-weight: bold;
+    padding: 5px 10px;
+    right:40px;
+    top:10px;
+    z-index:10;
+    width: 50px;
+    height: 30px;
+    background-color:red;
+    border-radius: 70px;
+    border: 5px solid red;
+    cursor:pointer;
+    
+ 
+}
+.textEllipsis {
+    position:absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:center;
+    color: black;
+    font-family: 'helvetica';
+    font-weight: bold;
+    font-size:1em;
+    background-color:rgb(235, 224, 224);
+    border-radius: 70px;
+    cursor:pointer;
+    left:10px;
+    bottom:10px;
+    z-index:10;
+    width: 160px;
+    height: 40px;
+    opacity: 0.9;
+    
+}
+.share-icon {
+    position:absolute;
+    background-color:rgb(235, 224, 224);
+    border-radius: 50%;
+    cursor:pointer;
+    right:85px;
+    bottom:10px;
+    z-index:10;
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+   
+}
+
+.option-icon {
+    position:absolute;
+    background-color:rgb(235, 224, 224);
+    border-radius: 50%;
+    cursor:pointer;
+    right:35px;
+    bottom:10px;
+    z-index:10;
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.image-container::before {
+    content: "";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 1;
+    background-image: linear-gradient(to top right, black 0%, transparent 70%);
+}
